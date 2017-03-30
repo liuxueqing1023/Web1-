@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+</head>
+<body>
+<table border="1" cellspacing="0">
+	<tr>
+		<th width="100px" height="30px">用户名:</th>
+		<td width="300px" height="30px">
+			<from>
+			<input type="text" name="name1"/>
+			</from>
+		</td>
+	</tr>
+	<tr>
+		<th width="100px" height="30px">密码:</th>
+		<td width="300px" height="30px">
+			<from>
+			<input type="password" name="pass1"/>
+			</from>
+		</td>
+	</tr>
+	<tr>
+		<th width="100px" height="30px">确认密码:</th>
+		<td width="300px" height="30px">
+			<from>
+			<input type="password" name="pass2"/>
+			</from>
+		</td>
+	</tr>
+	<tr>
+		<th width="100px" height="30px">性别:</th>
+		<td width="300px" height="30px">
+			<from>
+			<input type="radio" value="Male" name="sex" checked="checked"/>男
+			<input type="radio" value="FaMale" name="sex"/>女
+			</from>
+		</td>
+	</tr><tr>
+		<th width="100px" height="30px">生日:</th>
+		<td width="300px" height="30px">
+			<from>
+				<select name="gongli">
+					<option value="one"selected="selected">公历</option>
+					<option value="two">农历</option>
+				</select>
+				<select name="nian">
+					<option value="one"selected="selected">年</option>
+					<option value="two">1996</option>
+					<option value="three">1997</option>
+					<option value="four">1998</option>
+					<option value="five">1999</option>
+					<option value="six">2000</option>
+				</select>
+				<select name="yue">
+					<option value="1"selected="selected">月</option>
+					<option value="2">1</option>
+					<option value="3">2</option>
+					<option value="4">3</option>
+					<option value="5">4</option>
+					<option value="6">5</option>
+					<option value="7">6</option>
+					<option value="8">7</option>
+					<option value="9">8</option>
+					<option value="10">9</option>
+					<option value="11">10</option>
+					<option value="12">11</option>
+					<option value="13">12</option>
+				</select>
+				<select name="ri">
+					<option value="1"selected="selected">日</option>
+					<option value="2">1</option>
+					<option value="3">2</option>
+					<option value="4">3</option>
+					<option value="5">4</option>
+					<option value="6">5</option>
+					<option value="7">6</option>
+					<option value="8">7</option>
+					<option value="9">8</option>
+					<option value="10">9</option>
+					<option value="11">10</option>
+					<option value="12">11</option>
+					<option value="13">12</option>
+					<option value="13">13</option>
+					<option value="13">14</option>
+					<option value="13">15</option>
+					<option value="13">16</option>
+					<option value="13">17</option>
+					<option value="13">18</option>
+					<option value="13">19</option>
+				</select>
+			</from>
+		</td>
+	</tr>
+	<tr>
+		<th width="100px" height="30px">所在地:</th>
+		<td width="300px" height="30px">
+			<from>
+				<select name="guo">
+					<option value="one"selected="selected">中国</option>
+					<option value="two">中国</option>
+				</select>
+				<select name="sheng">
+					<option value="one"selected="selected">河北</option>
+					<option value="two">北京</option>
+				</select>
+				<select name="shi">
+					<option value="one"selected="selected">石家庄</option>
+				</select>
+			</from>
+		</td>
+	</tr>
+	<tr>
+		<th width="100px" height="30px">验证码:</th>
+		<td width="300px" height="30px">
+			<from>
+			<input type="text" name="name5"/>
+			<img src="yanzhengma.jpg" width="80" height="25">
+			</from>
+		</td>
+	</tr>
+	<tr>
+		<th width="100px" height="30px">证件类型:</th>
+		<td width="300px" height="30px">
+			<from>
+			<select name="shenfenzheng">
+					<option value="one"selected="selected">身份证</option>
+				</select>
+			</from>
+		</td>
+	</tr>
+	<tr>
+		<th width="100px" height="30px">证件号:</th>
+		<td width="300px" height="30px">
+			<from>
+				<input type="text" name="name6"/>
+			</from>
+		</td>
+	</tr>
+	<tr>
+		<th width="100px" height="30px">爱好:</th>
+		<td width="300px" height="30px">
+			<from>
+				<input type="checkbox" value="音乐" name="hobby"/>音乐
+				<input type="checkbox" value="读书" name="hobby"/>读书
+				<input type="checkbox" value="跳舞" name="hobby"/>跳舞
+				<input type="checkbox" value="下棋" name="hobby"/>下棋
+				<input type="checkbox" value="其他" name="hobby"/>其他
+			</from>
+		</td>
+	</tr>
+	<tr>
+		<th width="100px" height="30px">说明:</th>
+		<td width="300px" height="30px">
+			<from>
+				<textarea name="shuoming" rows="2" cols="4" style="width:400px;height:160px"></textarea>
+			</from>
+		</td>
+	</tr>
+	<tr>
+		<th width="100px" height="30px">上传头像</th>
+		<td width="300px" height="30px">
+			<from>
+				<input type="file" name="files"/>
+			</from>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center">
+		<input type="submit" value="提交" name="sub">
+		<input type="button" value="重置" name="but">
+		<input type="reset" value="按钮" name="res">
+		</td>
+	</tr>
+</from>
+</table>
+</body>
