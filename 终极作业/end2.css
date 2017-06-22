@@ -1,0 +1,34 @@
+*ul{
+	list-style-type: none;
+	float: left;
+}
+a:visited{
+	color: gray;
+}
+.one{
+	color: green;
+	text-decoration: none;
+}
+.two{
+	text-decoration: none;
+}
+
+
+
+.img{
+	height: 500px;
+	width: 1000px;
+}
+
+
+
+#footer{
+	padding-top:10px;
+	height:105px;
+	clear:both;
+	background-image:url(images/foot.gif);
+}
+.youqinglianjie{
+	margin-left:60px;
+	padding-top:10px;
+}

@@ -1,0 +1,47 @@
+ul{
+	list-style-type: none;
+	float: left;
+}
+a:visited{
+	color: gray;
+}
+.one{
+	color: green;
+	text-decoration: none;
+}
+.two{
+	text-decoration: none;
+}
+
+
+
+.img{
+	height: 500px;
+	width: 1000px;
+}
+.nav{
+	margin:10px;
+	border:0px;
+	float: left;
+	width: 40%;
+}
+.navv{
+	background-image: url(images/zhu.jpg)；
+}
+.div{
+	font:2px '楷体';
+	padding: 5px 1px 10px 20px;
+}
+
+
+
+#footer{
+	padding-top:10px;
+	height:105px;
+	clear:both;
+	background-image:url(images/foot.gif);
+}
+.youqinglianjie{
+	margin-left:60px;
+	padding-top:10px;
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!--STATUS OK-->
+<html>
+
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="referrer" content="always" />
+<meta name="description" content="张文茂的词条图片">
+<title>张文茂图片_百度百科</title>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="icon" sizes="any" mask href="//www.baidu.com/img/baidu.svg">
+
+<meta name="keywords" content="张文茂 张文茂_图片 百度百科 百科 baike 词条图片">
+<meta name="image" content="https://bkssl.bdimg.com/cms/static/baike.png">
+<meta itemprop="image" content="https://bkssl.bdimg.com/cms/static/baike.png">
+
+<!--[if lte IE 9]>
+<script>
+    (function() {
+      var e = "abbr,article,aside,audio,canvas,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(","),
+        i = e.length;
+      while (i--) {
+        document.createElement(e[i]);
+      }
+    })();
+  </script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="https://bkssl.bdimg.com/static/wiki-common/pkg/wiki-common-base_3bd3a2e.css"/><link rel="stylesheet" type="text/css" href="https://bkssl.bdimg.com/static/wiki-album/pkg/wiki-album-picture_015d851.css"/></head>
+<body class="w-small">
+
+
+<script>
+        var imageResize = function(event) {
+            var picture = document.getElementById('imgPicture');
+            var parent = document.getElementById('picture');
+            var pHeight = document.body.clientHeight - 102;
+            parent.style.height = pHeight + 'px';
+            var rWidth = picture.width,
+                rHeight = picture.height,
+                pWidth = parent.offsetWidth;
+
+                var rateW = rWidth / pWidth,
+                    rateH = rHeight / pHeight;
+                var w = rWidth,
+                    h = rHeight;
+
+                if (rateW > 1 || rateH > 1) {
+                    if (rateW > rateH) {
+                        w = pWidth;
+                        h = rHeight / rateW;
+                    } else {
+                        h = pHeight;
+                        w = rWidth / rateH;
+                    }
+                }
+                        
+            picture.style.width = w + 'px';
+            picture.style.height = h + 'px';
+            picture.style.marginTop = (pHeight - h) / 2 + 'px';
+            picture.style.visibility = 'visible';
+        };
+
+        // 以下代码的功能是：在页面加载前，判断url中的对应值是否等于hash值，如不等，则改变url重新加载
+        // 添加代码原因：
+        //     1) 之前的代码逻辑是：url会具体指定到某张图片，前端在｀切换相册｀时，使用ajax获取数据，并不断更新hash值，但当用户
+        //        ｀刷新页面｀或｀点击返回词条按钮｀然后再｀点击浏览器后退键｀时，uri中的url和hash值不同，源代码会出现bug,导致
+        //        '上／下一图册'，'向上／下箭头'点击无效（具体原因请view代码）
+        //     2) hash值的使用无意义，页面刷新后并不能让用户回到之前访问的图片/图册
+        // 故作此修改。
+        // 个人认为比较合适的解决方法是：
+        //     1）图册页的图片数据是后端同步打过来的。在词条页面中，图册url不要具体到某张图片，到图册即可，由前端使用hash值加上
+        //        smarty的方法来控制具体到哪张图片，在切换图册时，刷新浏览器，改变url。
+        //     2) 图册页不需要同步的图片数据，全部由前端根据uri利用ajax获取。
+        // COMMENT BY YUHUI
+
+
+        //在此处不知道怎么使用require，所以自己写了一个将hash值转换为对象的函数
+        //另外，在 wiki-common:widget/util/url.js 下有url相关函数
+        //eg: hashStr = '#aid=19973219&pic=f7' => hashObj = {aid: '19973219', pic: 'f7'};
+        //COMMENT BY YUHUI
+        function makeHashIntoObj (hashStr) {
+            if (hashStr[0] === '#') {
+                hashStr = hashStr.substr(1);
+            }
+            var hashObj = {};
+            var hashArr = hashStr.split('&');
+            var tempArr = [];
+            for (var i = 0; i < hashArr.length; i++) {
+                tempArr = hashArr[i].split('=');
+                hashObj[tempArr[0]] = tempArr[1];
+            }
+            return hashObj;
+        }
+        // locationArr = ['', 'pic', $lemmaTitle, $newLemmaId, albumId, picSign];
+        var locationArr = window.location.pathname.split('/');
+        var hashObj = makeHashIntoObj(window.location.hash);
+        var picSign = locationArr[5];
+        var albumId = locationArr[4];
+        var picSignInHash = hashObj['pic'];
+        var albumIdInHash = hashObj['aid'];
+        if (!!picSignInHash && !!albumIdInHash && !!picSign && !!albumId) {
+            if (picSign != picSignInHash || albumId != albumIdInHash) {
+                locationArr[5] = picSignInHash;
+                locationArr[4] = albumIdInHash;
+                window.location.pathname = locationArr.join('/');
+            }
+        }
+    </script>
+
+
+<div id="picture-dialog" class="picture-dialog">
+<div class="header">
+<a class="logo" target="_blank" href="/">
+<span class="cmn-baike-logo white"><em class="cmn-icon cmn-icons cmn-icons_logo-bai"></em><em class="cmn-icon cmn-icons cmn-icons_logo-du"></em><em class="cmn-icon cmn-icons cmn-icons_logo-baike"></em></span>
+</a>
+<div class="breadcrumb">
+<a target="_blank" class="album-name" href="/pic/%E5%BC%A0%E6%96%87%E8%8C%82/6829450">张文茂图册</a>&nbsp;>&nbsp;<span class="album-desc">词条图片</span>
+</div>
+<a class="return-back" href="/subview/2545581/2545581.htm">返回词条</a>
+<div style="clear: both"></div>
+</div>
+<div class="thumbnail" style="z-index: 2; width: 80px; top: 50%; margin-top: -204px; right: 12.5%; margin-right: -80px">
+<div class="pic-slider">
+<div class="prev-pic"></div>
+<div class="pic-scroller">
+<div class="pic-list">
+
+<a class="pic-item selected" title="" data-index="0" data-sign="a08b87d6277f9e2fbb6870b61c30e924b899f32b" href="/pic/%E5%BC%A0%E6%96%87%E8%8C%82/6829450/0/a08b87d6277f9e2fbb6870b61c30e924b899f32b">
+<img src="https://imgsa.baidu.com/baike/h%3D160/sign=3dab6155b5fd5266b82b38129b199799/a08b87d6277f9e2fbb6870b61c30e924b899f32b.jpg" alt="" style="display: block;width:80px;height:101px;top:0px;left:0px;">
+<div class="seleced-cover"></div>
+</a>
+
+<a class="pic-item " title="" data-index="1" data-sign="d50735fae6cd7b897f8d0c950f2442a7d8330ec6" href="/pic/%E5%BC%A0%E6%96%87%E8%8C%82/6829450/0/d50735fae6cd7b897f8d0c950f2442a7d8330ec6">
+<img src="https://imgsa.baidu.com/baike/crop%3D0%2C0%2C400%2C270%3Bw%3D150/sign=11c3390f2df5e0fefa57d34161501898/d50735fae6cd7b897f8d0c950f2442a7d8330ec6.jpg" alt="" style="display: block;width:118px;height:80px;top:0px;left:-19px;">
+</a>
+
+<a class="pic-item " title="" data-index="2" data-sign="f677b1c398ed0973b219a820" href="/pic/%E5%BC%A0%E6%96%87%E8%8C%82/6829450/0/f677b1c398ed0973b219a820">
+<img src="https://imgsa.baidu.com/baike/w%3D150/sign=76d63368251f95caa6f596b3f9167fc5/d50735fae6cd7b897f8d0c950f2442a7d8330ec6.jpg" alt="" style="display: block;width:118px;height:80px;top:0px;left:-19px;">
+</a>
+</div>
+</div>
+<div class="next-pic"></div>
+</div>
+</div>
+<div class="picture-wrap">
+
+<div id="picture" class="picture" style="left:14.5%; top:62px; width:71%; height:600px">
+<img id="imgPicture" src="https://imgsa.baidu.com/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=70df340f830a19d8df0e8c575293e9ee/a08b87d6277f9e2fbb6870b61c30e924b899f32b.jpg" onload="imageResize()" style="visibility:hidden"/>
+<div id="picture-msg-tip" class="msg-tip yahei" style="display:none">
+<a class="close"></a>
+<span class="msg-tip-text"></span>
+</div>
+</div>
+</div>
+<div class="picture-footer yahei">
+<div class="footer-wrap" style="width:1000px; left:50%; margin-left:-500px">
+<div class="description">
+<span class="number">
+<span style="color:#b9bbbf">1</span>/<span style="color:#427cb8">3</span>
+</span>
+<span class="text"></span>
+</div>
+<a class="tool-button doubt j-doubt-link" target="_blank" href="/wikiui/doubt?lemmaId=6829450&picUrl=https://imgsa.baidu.com/baike/c0%253Dbaike80%252C5%252C5%252C80%252C26/sign%3D70df340f830a19d8df0e8c575293e9ee/a08b87d6277f9e2fbb6870b61c30e924b899f32b.jpg" nslog-type="10300106">质疑</a>
+<a class="tool-button info">信息</a>
+
+<a class="tool-button origin" target="_blanck" href="https://imgsa.baidu.com/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=70df340f830a19d8df0e8c575293e9ee/a08b87d6277f9e2fbb6870b61c30e924b899f32b.jpg">原图</a>
+<div class="info-panel">
+<div class="image-size">
+<span>图片尺寸</span>
+<span class="size">378X478</span>
+</div>
+<div class="album-info">
+<span class="from-text">来自</span>
+<span class="album-text">
+<a class="lemma-name" target="_blank" href="/subview/2545581/2545581.htm">
+张文茂词条</a>-<a class="album-name" target="_blank" href="/pic/%E5%BC%A0%E6%96%87%E8%8C%82/6829450">词条图片</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+    //科学百科任务的词条所有提交,需要自动审核对其做忽略处理. 所以删除图片/绿色通道等规则也不适用于这类词条, 所以把它置顶处理
+    </body><script type="text/javascript" src="https://bkssl.bdimg.com/static/wiki-common/pkg/wiki-common_sync_js_0_6be349d.js"></script>
+<script type="text/javascript" src="https://bkssl.bdimg.com/static/wiki-album/pkg/wiki-album-picture_7df6cd5.js"></script>
+<script type="text/javascript">!function(){        var $ = require('wiki-common:widget/lib/jquery/jquery.js'),
+            urlExt = require('wiki-common:widget/util/url.js'),
+            nslog = require("wiki-common:widget/component/nslog/nslog.js"),
+            PictureDialog = require('wiki-album:widget/picture/pictureDialog/pictureDialog.js');
+        
+        // 百科质疑，增加质疑入口--当前页面链接
+        // var doubtLink = $('.j-doubt-link').attr('href') + '&albumUrl=' + window.location.href;
+        // $('.j-doubt-link').attr('href', doubtLink);
+
+
+        var hash = window.location.hash.substr(1);
+        var albumId = urlExt.getQuery('aid', hash);
+        var pictureSign = urlExt.getQuery('pic', hash);
+        var useHash = !!albumId && albumId != '' && !!pictureSign && pictureSign != '';
+        albumId = useHash ? albumId : '0';
+        pictureSign = useHash ? pictureSign : 'a08b87d6277f9e2fbb6870b61c30e924b899f32b';
+
+        var pageAlbumId = "0";
+        var pagePicSign = "a08b87d6277f9e2fbb6870b61c30e924b899f32b";
+
+        var useHash = (!!albumId && albumId != "") && (!!pictureSign && pictureSign != "" && pictureSign != pagePicSign);
+        if (useHash) {
+                            window.location.href = '/pic/%E5%BC%A0%E6%96%87%E8%8C%82/6829450/' +albumId+ '/' + pictureSign;
+                    }
+
+        PictureDialog.getInstance().show({
+            albums: [{"desc":"\u8bcd\u6761\u56fe\u7247","coverpic":"a08b87d6277f9e2fbb6870b61c30e924b899f32b","coverwidth":378,"coverheight":478,"pictures":[{"desc":"","width":378,"height":478,"owner":"\u5c0f\u7f16\u53ee\u5f53","src":"a08b87d6277f9e2fbb6870b61c30e924b899f32b","picId":15273058492,"type":{"view":220,"albumview":160,"oriWithWater":479,"litterImage":200,"authModule":150,"view_new":209,"view_card":268},"sizes":{"220":{"url":"https:\/\/imgsa.baidu.com\/baike\/s%3D220\/sign=2231573d0c2442a7aa0efaa7e142ad95\/a08b87d6277f9e2fbb6870b61c30e924b899f32b.jpg","width":173,"height":220,"size":220},"160":{"url":"https:\/\/imgsa.baidu.com\/baike\/w%3D160\/sign=fec781bdcb95d143da76e02543f18296\/a08b87d6277f9e2fbb6870b61c30e924b899f32b.jpg","width":160,"height":202,"size":160},"479":{"url":"https:\/\/imgsa.baidu.com\/baike\/c0%3Dbaike80%2C5%2C5%2C80%2C26\/sign=70df340f830a19d8df0e8c575293e9ee\/a08b87d6277f9e2fbb6870b61c30e924b899f32b.jpg","width":378,"height":478,"size":479},"200":{"url":"https:\/\/imgsa.baidu.com\/baike\/s%3D200\/sign=2231573d0c2442a7aa0efaa5e142ad95\/a08b87d6277f9e2fbb6870b61c30e924b899f32b.jpg","width":158,"height":200,"size":200},"150":{"url":"https:\/\/imgsa.baidu.com\/baike\/h%3D160\/sign=3dab6155b5fd5266b82b38129b199799\/a08b87d6277f9e2fbb6870b61c30e924b899f32b.jpg","width":126,"height":160,"size":150},"209":{"url":"https:\/\/imgsa.baidu.com\/baike\/w%3D209\/sign=f79ba363a864034f0fcdc50696c27980\/a08b87d6277f9e2fbb6870b61c30e924b899f32b.jpg","width":209,"height":264,"size":209},"268":{"url":"https:\/\/imgsa.baidu.com\/baike\/w%3D268\/sign=186f1375f8edab6474724ac6cf37af81\/a08b87d6277f9e2fbb6870b61c30e924b899f32b.jpg","width":268,"height":338,"size":268}},"aid":0,"albumDesc":"\u8bcd\u6761\u56fe\u7247","index":1},{"crop":"crop=0,0,400,270","desc":"","width":400,"height":270,"owner":"\u8ff7\u59311323","src":"d50735fae6cd7b897f8d0c950f2442a7d8330ec6","picId":637787361,"type":{"view":220,"albumview":120,"oriWithWater":401,"litterImage":200,"authModule":150,"view_new":209,"view_card":268},"sizes":{"220":{"url":"https:\/\/imgsa.baidu.com\/baike\/crop%3D0%2C0%2C400%2C270%3Bs%3D220\/sign=55538f7294eef01f595b4285ddceb515\/d50735fae6cd7b897f8d0c950f2442a7d8330ec6.jpg","width":220,"height":148,"size":220},"120":{"url":"https:\/\/imgsa.baidu.com\/baike\/crop%3D0%2C0%2C400%2C270%3Bh%3D120\/sign=55538f7294eef01f595b4285ddceb515\/d50735fae6cd7b897f8d0c950f2442a7d8330ec6.jpg","width":177,"height":120,"size":120},"401":{"url":"https:\/\/imgsa.baidu.com\/baike\/crop%3D0%2C0%2C400%2C270%3Bc0%3Dbaike80%2C5%2C5%2C80%2C26\/sign=93574436b912c8fca0bcac8dc133be75\/d50735fae6cd7b897f8d0c950f2442a7d8330ec6.jpg","width":400,"height":270,"size":401},"200":{"url":"https:\/\/imgsa.baidu.com\/baike\/crop%3D0%2C0%2C400%2C270%3Bs%3D200\/sign=4e8df0f8b48f8c54f79c9f6f071901c5\/d50735fae6cd7b897f8d0c950f2442a7d8330ec6.jpg","width":200,"height":135,"size":200},"150":{"url":"https:\/\/imgsa.baidu.com\/baike\/crop%3D0%2C0%2C400%2C270%3Bw%3D150\/sign=11c3390f2df5e0fefa57d34161501898\/d50735fae6cd7b897f8d0c950f2442a7d8330ec6.jpg","width":150,"height":101,"size":150},"209":{"url":"https:\/\/imgsa.baidu.com\/baike\/crop%3D0%2C0%2C400%2C270%3Bw%3D209\/sign=4e8df0f8b48f8c54f79c9f6f071901c5\/d50735fae6cd7b897f8d0c950f2442a7d8330ec6.jpg","width":209,"height":141,"size":209},"268":{"url":"https:\/\/imgsa.baidu.com\/baike\/crop%3D0%2C0%2C400%2C270%3Bw%3D268\/sign=dbf52ed3e0fe9925df433310099872ef\/d50735fae6cd7b897f8d0c950f2442a7d8330ec6.jpg","width":268,"height":180,"size":268}},"aid":0,"albumDesc":"\u8bcd\u6761\u56fe\u7247","index":2},{"desc":"","width":400,"height":270,"owner":"","src":"f677b1c398ed0973b219a820","picId":637787361,"type":{"view":220,"albumview":120,"oriWithWater":401,"litterImage":200,"authModule":150,"view_new":209,"view_card":268},"sizes":{"220":{"url":"https:\/\/imgsa.baidu.com\/baike\/s%3D220\/sign=490ffe394134970a4373172da5cbd1c0\/d50735fae6cd7b897f8d0c950f2442a7d8330ec6.jpg","width":220,"height":148,"size":220},"120":{"url":"https:\/\/imgsa.baidu.com\/baike\/h%3D120\/sign=52029fa4d158ccbf04bcb13829d9bcd4\/d50735fae6cd7b897f8d0c950f2442a7d8330ec6.jpg","width":177,"height":120,"size":120},"401":{"url":"https:\/\/imgsa.baidu.com\/baike\/c0%3Dbaike80%2C5%2C5%2C80%2C26\/sign=4d732dfba3cc7cd9ee203c8b58684a5a\/d50735fae6cd7b897f8d0c950f2442a7d8330ec6.jpg","width":400,"height":270,"size":401},"200":{"url":"https:\/\/imgsa.baidu.com\/baike\/s%3D200\/sign=490ffe394134970a4373172fa5cbd1c0\/d50735fae6cd7b897f8d0c950f2442a7d8330ec6.jpg","width":200,"height":135,"size":200},"150":{"url":"https:\/\/imgsa.baidu.com\/baike\/w%3D150\/sign=76d63368251f95caa6f596b3f9167fc5\/d50735fae6cd7b897f8d0c950f2442a7d8330ec6.jpg","width":150,"height":101,"size":150},"209":{"url":"https:\/\/imgsa.baidu.com\/baike\/w%3D209\/sign=911338e19f3df8dca63d8891f41072bf\/d50735fae6cd7b897f8d0c950f2442a7d8330ec6.jpg","width":209,"height":141,"size":209},"268":{"url":"https:\/\/imgsa.baidu.com\/baike\/w%3D268\/sign=28e173e93bc79f3d8fe1e33682a0cdbc\/d50735fae6cd7b897f8d0c950f2442a7d8330ec6.jpg","width":268,"height":180,"size":268}},"aid":0,"albumDesc":"\u8bcd\u6761\u56fe\u7247","index":3}],"coverurl":"https:\/\/imgsa.baidu.com\/baike\/s%3D290\/sign=2231573d0c2442a7aa0efaace142ad95\/a08b87d6277f9e2fbb6870b61c30e924b899f32b.jpg","total":3,"sign":0}],
+            lemmaId: '2545581',
+            subLemmaId: '2545581',
+            lemmaTitle: '张文茂',
+            newLemmaId: '6829450',
+            versionId: '',
+            commitId: '',
+            albumId: albumId,
+            picPageType: '0',
+            pictureSign: pictureSign,
+            lemmaName: '张文茂',
+            crumbClick: function() {
+                nslog(10000201);
+            },
+            pictureChanged: function(albumId, picSign) {
+                window.location.hash = 'aid=' + albumId + '&pic=' + picSign;
+                // 百科质疑入口变化逻辑
+                var doubtLink = '/wikiui/doubt?lemmaId='+ '6829450'
+                    + '&fr=albumPicture'
+                    + '&picUrl=' + $('.picture-footer .origin').attr('href')
+                    + '&albumUrl=' + window.location.origin + window.location.pathname;
+
+                $('.j-doubt-link').attr('href', doubtLink);
+            }
+        });    }();
+!function(){      require('wiki-common:widget/component/psLink/psLink.js');
+    }();</script><script type="text/javascript">(new Image()).src="https://gsp0.baidu.com/5aAHeD3nKhI2p27j8IqW0jdnxx1xbK/tb/pms/img/st.gif?pid=242&v=2&fs=0c8a499,117d9c9,dd68578,0469f06&otherStr=&page=wiki-album/page/picture/picture.tpl&sid=1497234500&hash=dc24201289&fid=baike";</script></html>
